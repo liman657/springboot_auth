@@ -15,6 +15,11 @@ public class BaseResponse<T> {
 
     private T data;
 
+    public BaseResponse(StatusCode statusCode) {
+        this.status = statusCode.getCode();
+        this.message = statusCode.getMsg();
+    }
+
     public BaseResponse(StatusCode statusCode, T data) {
         this.status = statusCode.getCode();
         this.message = statusCode.getMsg();
@@ -25,6 +30,11 @@ public class BaseResponse<T> {
         this.status = status;
         this.message = message;
         this.data = data;
+    }
+
+    public BaseResponse(Integer status, String message) {
+        this.status = status;
+        this.message = message;
     }
 
     public Integer getStatus() {
