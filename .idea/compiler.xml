@@ -9,6 +9,7 @@
         <module name="authapi" />
         <module name="authmodel" />
         <module name="authserver" />
+        <module name="mybatisgenerator" />
       </profile>
     </annotationProcessing>
   </component>

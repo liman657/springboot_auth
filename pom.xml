@@ -17,6 +17,7 @@
         <module>auth-api</module>
         <module>auth-model</module>
         <module>auth-server</module>
+        <module>mybatis-generator</module>
     </modules>
 
     <properties>
