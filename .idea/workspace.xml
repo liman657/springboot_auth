@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edce0fd5-50ef-49ef-a87b-d45506bb0074" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthTokenModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CustomerWebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/contants/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/DBAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/dto/AccessTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/interceptor/DBAuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/scheduler/CommonScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/CommonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/DBAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/EncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/SnowFlake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-api/target/classes/com/learn/springauthapi/enums/StatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/target/classes/com/learn/springauthapi/enums/StatusCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-model/target/classes/com/learn/springauthmodel/mapper/AuthTokenMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/target/classes/com/learn/springauthmodel/mapper/AuthTokenMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-model/target/classes/com/learn/springauthmodel/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/target/classes/com/learn/springauthmodel/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/target/classes/com/learn/springauthserver/AuthServerStarterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/target/classes/com/learn/springauthserver/AuthServerStarterApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/AuthTokenMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/src/main/resources/mappers/AuthTokenMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/src/main/resources/mappers/LogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-model/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/target/classes/mappers/AuthTokenMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/target/classes/mappers/LogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generator/target/classes/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userAuth.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userAuth.0.lck" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,16 +50,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/PageController.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DBAuthInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/interceptor/DBAuthInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="158">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonScheduler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/scheduler/CommonScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthServerStarterApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduleConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/ScheduleConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerWebConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CustomerWebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,7 +123,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>retrofit.version</find>
+      <find>dev</find>
+      <find>com.learn.springauthmodel.dao.AuthTokenMapper.BaseResultMap</find>
+      <find>com.learn.mybatis.generator.entity.domain.AuthToken</find>
+      <find>com.learn.springauthmodel.dao.AuthTokenMapper</find>
+      <find>BaseResultMap</find>
+      <find>deleteByPrimaryKey</find>
+      <find>com.learn.mybatis.generator.entity.domain.Log</find>
+      <find>com.debug.auth.model.entity.User</find>
+      <find>com.learn.mybatis.generator.entity.domain.User</find>
+      <find>insert</find>
+      <find>selectByUserName</find>
+      <find>LOG_PATH</find>
+      <find>com.debug.auth.model.entity.AuthToken</find>
     </findStrings>
+    <replaceStrings>
+      <replace>com.learn.springauthmodel.entity.Log</replace>
+      <replace>com.learn.springauthmodel.entity.User</replace>
+      <replace />
+      <replace>com.debug.auth.model.entity.AuthToken</replace>
+      <replace>com.learn.springauthmodel.entity.AuthToken</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,18 +164,40 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/auth-api/pom.xml" />
         <option value="$PROJECT_DIR$/auth-model/pom.xml" />
-        <option value="$PROJECT_DIR$/auth-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/auth-server/pom.xml" />
-        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java" />
-        <option value="$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java" />
         <option value="$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/response/BaseResponse.java" />
         <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/mybatis-generator/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatisGeneratorinit.properties" />
         <option value="$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml" />
         <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/UserMapper.java" />
-        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthTokenOV.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/UserService.java" />
+        <option value="$PROJECT_DIR$/auth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/resources/mappers/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/resources/mappers/LogMapper.xml" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/SnowFlake.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/contants/Constant.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthTokenModel.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/dto/AccessTokenDto.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/EncryptUtil.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/CommonService.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/LogMapper.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/DBAuthController.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CustomerWebConfig.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java" />
+        <option value="$PROJECT_DIR$/auth-model/src/main/resources/mappers/AuthTokenMapper.xml" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/interceptor/DBAuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/DBAuthService.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CommonScheduler.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/ScheduleConfig.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java" />
+        <option value="$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/scheduler/CommonScheduler.java" />
       </list>
     </option>
   </component>
@@ -120,8 +236,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -141,6 +257,103 @@
             <path>
               <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthmodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthmodel" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthmodel" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
               <item name="auth-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -193,6 +406,18 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="springauthserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthserver" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
@@ -212,6 +437,42 @@
               <item name="auth-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthserver" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthserver" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="springauthserver" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,7 +482,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
@@ -234,13 +495,28 @@
               <item name="mybatis-generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootauth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootauth" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,9 +531,15 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learn.springauthserver.scheduler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\springbootauth\auth-server\src\main\java\com\learn\springauthserver\service" />
+      <recent name="F:\springbootauth\auth-server\src\main\java\com\learn\springauthserver\enum" />
+      <recent name="F:\springbootauth\auth-server\src\main\java\com\learn\springauthserver\utils" />
+      <recent name="F:\springbootauth\auth-model\src\main\resources" />
       <recent name="F:\springbootauth\auth-model\src\main\java\com\learn\springauthmodel\entity" />
-      <recent name="F:\springbootauth\auth-server\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -332,51 +614,56 @@
       <workItem from="1574251691558" duration="6205000" />
       <workItem from="1574345423370" duration="4201000" />
       <workItem from="1574563920423" duration="646000" />
-      <workItem from="1575981638991" duration="1843000" />
+      <workItem from="1575981638991" duration="2286000" />
+      <workItem from="1576059487709" duration="7237000" />
+      <workItem from="1576069801159" duration="1616000" />
+      <workItem from="1576147803500" duration="6018000" />
+      <workItem from="1576246525021" duration="3381000" />
+      <workItem from="1576325779770" duration="5057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12895000" />
+    <option name="totallyTimeSpent" value="36647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32997763" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32976446" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39709172" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="JProfiler" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32997763" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32976446" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Problems" order="12" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="JProfiler" order="14" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,180 +673,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1464">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/LogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/Log.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthToken.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatisGeneratorinit.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="21" column="1" selection-start-line="14" selection-start-column="38" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/AuthApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/response/BaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/ModelStarterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/ModelStarterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/response/BaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/AuthApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -569,68 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/java/com/learn/mybatis/generator/mapper/dao/UserMapper.java" />
     <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/java/com/learn/mybatis/generator/entity/domain/User.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/LogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/AuthTokenMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/java/com/learn/mybatis/generator/mapper/dao/AuthTokenMapper.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatisGeneratorinit.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/LogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/Log.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthToken.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -644,65 +696,313 @@
     <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="480">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        <state relative-caret-position="288">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/templates/page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/ModelStarterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="67" column="54" lean-forward="true" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/enums/StatusCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/AuthTokenMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/LogMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mappers/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/auth-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="221" column="26" selection-start-line="221" selection-start-column="26" selection-end-line="221" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/resources/mappers/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/spring/spring-jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userAuth.2" />
+    <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatisGeneratorinit.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="111" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/dto/AccessTokenDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/SnowFlake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-652">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/contants/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/utils/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1608">
+          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/entity/AuthTokenModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="55" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="576">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/LogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/resources/mappers/LogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/resources/mappers/AuthTokenMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-model/src/main/java/com/learn/springauthmodel/mapper/AuthTokenMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-api/src/main/java/com/learn/springauthapi/response/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/io/ClassLoaderWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/DBAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/service/DBAuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/interceptor/DBAuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CustomerWebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/CommonScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/config/ScheduleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/AuthServerStarterApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/resources/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/scheduler/CommonScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-server/src/main/java/com/learn/springauthserver/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
         </state>
       </provider>
     </entry>
