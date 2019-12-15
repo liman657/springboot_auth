@@ -5,10 +5,12 @@ import com.learn.springauthapi.enums.StatusCode;
 import com.learn.springauthapi.response.BaseResponse;
 import com.learn.springauthmodel.entity.AuthToken;
 import com.learn.springauthmodel.entity.AuthTokenModel;
+import com.learn.springauthmodel.entity.Log;
 import com.learn.springauthmodel.entity.User;
 import com.learn.springauthmodel.mapper.AuthTokenMapper;
 import com.learn.springauthserver.contants.Constant;
 import com.learn.springauthserver.dto.AccessTokenDto;
+import com.learn.springauthserver.dto.UpdatePsdDto;
 import com.learn.springauthserver.utils.EncryptUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -16,6 +18,9 @@ import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.awt.image.BufferStrategy;
+import java.util.Date;
 
 /**
  * autor:liman
@@ -31,6 +36,9 @@ public class DBAuthService {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Autowired
+    private LogService logService;
 
     @Autowired
     private AuthTokenMapper authTokenMapper;
@@ -137,5 +145,37 @@ public class DBAuthService {
     public AccessTokenDto decodeAccessToken(String accessToken) throws Exception {
         String jsonStr = EncryptUtil.aesDecrypt(accessToken,Constant.TOKEN_AUTH_KEY);
         return objectMapper.readValue(jsonStr,AccessTokenDto.class);
+    }
+
+    @Transactional
+    public void updatePassword(final String accessToken, final UpdatePsdDto pwdDto) throws Exception {
+        if(StringUtils.isNotBlank(accessToken)){
+            //解析accesstoken
+            AccessTokenDto tokenDto= decodeAccessToken(accessToken);
+            //修改密码
+            int res = userService.updatePassword(tokenDto,pwdDto);
+            if(res<=0){
+                log.error("密码修改失败");
+            }
+            //失效以前的token
+            authTokenMapper.invalidateTokenByUser(tokenDto.getUserId());
+        }
+    }
+
+    /**
+     * 管理员增加用户的操作
+     * @param accessToken
+     * @param user
+     */
+    public void saveUser(String accessToken, User user) throws Exception {
+        //1.验证token的合法性
+        AccessTokenDto accessTokenDto = decodeAccessToken(accessToken);
+
+        //2.保存用户
+        userService.addUser(user);
+
+        //3.记录操作日志
+        Log logEntity = new Log(null,accessTokenDto.getUserId(),accessTokenDto.getUserName(),new Date(),"管理员增加一个普通用户");
+        logService.addLog(logEntity);
     }
 }

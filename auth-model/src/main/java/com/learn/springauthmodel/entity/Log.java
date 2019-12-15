@@ -1,8 +1,12 @@
 package com.learn.springauthmodel.entity;
 
+import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@Data
 public class Log implements Serializable {
     private Integer id;
 
@@ -15,6 +19,14 @@ public class Log implements Serializable {
     private String memo;
 
     private static final long serialVersionUID = 1L;
+
+    public Log(Integer id, Integer userId, String userName, Date createTime, String memo) {
+        this.id = id;
+        this.userId = userId;
+        this.userName = userName;
+        this.createTime = createTime;
+        this.memo = memo;
+    }
 
     public Integer getId() {
         return id;

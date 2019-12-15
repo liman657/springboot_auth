@@ -2,6 +2,8 @@ package com.learn.springauthserver.service;
 
 import com.learn.springauthmodel.entity.User;
 import com.learn.springauthmodel.mapper.UserMapper;
+import com.learn.springauthserver.dto.AccessTokenDto;
+import com.learn.springauthserver.dto.UpdatePsdDto;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,9 +36,23 @@ public class UserService {
             throw new RuntimeException("当前用户不存在");
         }
 
-        if(!password.equals(password)){
+        if(!password.equals(user.getPassword())){
             throw new RuntimeException("用户名密码不匹配");
         }
         return user;
+    }
+
+    /**
+     * 修改密码
+     * @param tokenDto
+     * @param updatePsdDto
+     * @return
+     */
+    public int updatePassword(AccessTokenDto tokenDto, UpdatePsdDto updatePsdDto){
+        return userMapper.updatePassword(tokenDto.getUserName(),updatePsdDto.getOldPassword(),updatePsdDto.getNewPassword());
+    }
+
+    public int addUser(User user){
+        return userMapper.insert(user);
     }
 }

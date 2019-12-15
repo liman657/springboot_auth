@@ -21,7 +21,7 @@ public class CommonScheduler {
     @Autowired
     private AuthTokenMapper authTokenMapper;
 
-    @Scheduled(cron = "0/10 * * * * ? ")//10S执行一次的表达式
+    @Scheduled(cron = "0/60 * * * * ? ")//10S执行一次的表达式
     @Async("taskExecutor")
     public void deleteAnyInvalidateToken(){
         try{

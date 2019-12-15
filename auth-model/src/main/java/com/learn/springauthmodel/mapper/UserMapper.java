@@ -19,4 +19,6 @@ public interface UserMapper {
     User selectByUserName(@Param("userName") String userName);
 
     User selectByUserId(@Param("userId") Integer userId);
+
+    int updatePassword(@Param("userName") String userName,@Param("oldPassword") String oldPassword,@Param("newPassword") String newPassword);
 }

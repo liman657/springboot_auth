@@ -77,4 +77,11 @@
     AND id = #{userId}
   </select>
 
+  <update id="updatePassword">
+    update user
+    set password = #{newPassword},update_time=now()
+    where is_active=1 and user_name=#{userName} and password=#{oldPassword}
+  </update>
+
+
 </mapper>

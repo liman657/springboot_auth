@@ -20,7 +20,8 @@ public class CustomerWebConfig implements WebMvcConfigurer {
     //添加拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        final String[] interceptorPaths = new String[]{"/dbAuth/token/auth"};
+        final String[] interceptorPaths = new String[]{"/dbAuth/token/auth"
+                , "/dbAuth/token/password/update", "token/logout"};
 
         registry.addInterceptor(dbAuthInterceptor())
                 .addPathPatterns(interceptorPaths);
@@ -28,7 +29,7 @@ public class CustomerWebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public DBAuthInterceptor dbAuthInterceptor(){
+    public DBAuthInterceptor dbAuthInterceptor() {
         return new DBAuthInterceptor();
     }
 
