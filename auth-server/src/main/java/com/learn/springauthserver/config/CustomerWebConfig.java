@@ -1,6 +1,7 @@
 package com.learn.springauthserver.config;
 
 import com.learn.springauthserver.interceptor.DBAuthInterceptor;
+import com.learn.springauthserver.interceptor.RedisAuthInterceptor;
 import com.learn.springauthserver.service.DBAuthService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,14 +24,24 @@ public class CustomerWebConfig implements WebMvcConfigurer {
         final String[] interceptorPaths = new String[]{"/dbAuth/token/auth"
                 , "/dbAuth/token/password/update", "token/logout"};
 
+        final String[] redisInterceptorPath = new String[]{"/redisAuth/token/auth"};
+
         registry.addInterceptor(dbAuthInterceptor())
-                .addPathPatterns(interceptorPaths);
-//                .excludePathPatterns()
+                .addPathPatterns(interceptorPaths)
+                .excludePathPatterns(redisInterceptorPath);
+
+        registry.addInterceptor(redisAuthInterceptor())
+                .addPathPatterns(redisInterceptorPath).excludePathPatterns(interceptorPaths);
     }
 
     @Bean
     public DBAuthInterceptor dbAuthInterceptor() {
         return new DBAuthInterceptor();
+    }
+
+    @Bean
+    public RedisAuthInterceptor redisAuthInterceptor(){
+        return new RedisAuthInterceptor();
     }
 
     //访问静态资源

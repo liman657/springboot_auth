@@ -42,6 +42,10 @@ public class UserService {
         return user;
     }
 
+    public User selectUserByUserName(String userName){
+        return userMapper.selectByUserName(userName);
+    }
+
     /**
      * 修改密码
      * @param tokenDto
