@@ -56,6 +56,17 @@ public class UserService {
         return userMapper.updatePassword(tokenDto.getUserName(),updatePsdDto.getOldPassword(),updatePsdDto.getNewPassword());
     }
 
+    /**
+     * 直接暴露底层接口
+     * @param userName
+     * @param oldPwd
+     * @param newPwd
+     * @return
+     */
+    public int updatePassword(String userName,String oldPwd,String newPwd){
+        return userMapper.updatePassword(userName, oldPwd, newPwd);
+    }
+
     public int addUser(User user){
         return userMapper.insert(user);
     }

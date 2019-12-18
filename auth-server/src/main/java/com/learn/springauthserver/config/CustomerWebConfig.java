@@ -1,6 +1,7 @@
 package com.learn.springauthserver.config;
 
 import com.learn.springauthserver.interceptor.DBAuthInterceptor;
+import com.learn.springauthserver.interceptor.JWTInterceptor;
 import com.learn.springauthserver.interceptor.RedisAuthInterceptor;
 import com.learn.springauthserver.service.DBAuthService;
 import org.springframework.context.annotation.Bean;
@@ -19,12 +20,22 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class CustomerWebConfig implements WebMvcConfigurer {
 
     //添加拦截器
+
+    /**
+     * 每一个类型的拦截器需要单独添加，不可串行添加
+     *
+     * @param registry
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         final String[] interceptorPaths = new String[]{"/dbAuth/token/auth"
-                , "/dbAuth/token/password/update", "token/logout"};
+                , "/dbAuth/token/password/update", "/dbAuth/token/logout"};
 
-        final String[] redisInterceptorPath = new String[]{"/redisAuth/token/auth"};
+        final String[] redisInterceptorPath = new String[]{"/redisAuth/token/auth"
+                , "/redisAuth/token/password/update", "/redisAuth/logout"};
+
+        final String[] jwtInterceptorPath = new String[]{"/JWTAuth/token/auth"
+                , "/JWTAuth/token/password/update", "/JWTAuth/token/logout"};
 
         registry.addInterceptor(dbAuthInterceptor())
                 .addPathPatterns(interceptorPaths)
@@ -32,6 +43,11 @@ public class CustomerWebConfig implements WebMvcConfigurer {
 
         registry.addInterceptor(redisAuthInterceptor())
                 .addPathPatterns(redisInterceptorPath).excludePathPatterns(interceptorPaths);
+
+        registry.addInterceptor(jwtInterceptor())
+                .addPathPatterns(jwtInterceptorPath)
+                .excludePathPatterns(redisInterceptorPath)
+                .excludePathPatterns(interceptorPaths);
     }
 
     @Bean
@@ -40,8 +56,13 @@ public class CustomerWebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public RedisAuthInterceptor redisAuthInterceptor(){
+    public RedisAuthInterceptor redisAuthInterceptor() {
         return new RedisAuthInterceptor();
+    }
+
+    @Bean
+    public JWTInterceptor jwtInterceptor() {
+        return new JWTInterceptor();
     }
 
     //访问静态资源

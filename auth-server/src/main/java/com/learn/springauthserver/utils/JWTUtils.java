@@ -1,9 +1,9 @@
 package com.learn.springauthserver.utils;
 
+import com.learn.springauthapi.enums.StatusCode;
+import com.learn.springauthapi.response.BaseResponse;
 import com.learn.springauthserver.contants.Constant;
-import io.jsonwebtoken.JwtBuilder;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import org.apache.shiro.codec.Base64;
 import org.joda.time.DateTime;
 
@@ -54,6 +54,7 @@ public class JWTUtils {
                 .setIssuedAt(now)//签发时间
                 .signWith(algorithm, key);//指定加密算法和密钥
 
+        //设置过期时间
         if(expireMills>=0){
             Long realExpire = System.currentTimeMillis()+expireMills;
             builder.setExpiration(new Date(realExpire));
@@ -63,4 +64,33 @@ public class JWTUtils {
         return builder.compact();
     }
 
+    public static BaseResponse validateJwtToken(String jwtToken) {
+
+        BaseResponse result = new BaseResponse(StatusCode.Success);
+        Claims claims = null;
+        try {
+            claims = parseJWT(jwtToken);
+            result.setData(claims);
+        }catch (ExpiredJwtException e){
+            result = new BaseResponse(StatusCode.TokenValidateExpireToken);//token过期
+        }catch (SignatureException e){
+            result = new BaseResponse(StatusCode.TokenValidateCheckFail);//认证失败
+        }catch (Exception e){
+            result = new BaseResponse(StatusCode.TokenValidateCheckFail);//其他异常均认证失败
+        }
+        return result;
+
+    }
+
+    /**
+     * 解析JWTToken
+     * @param jwtToken
+     * @return
+     */
+    public static Claims parseJWT(final String jwtToken){
+        SecretKey key = generalKey();
+        return Jwts.parser().setSigningKey(key)
+                .parseClaimsJws(jwtToken)
+                .getBody();
+    }
 }

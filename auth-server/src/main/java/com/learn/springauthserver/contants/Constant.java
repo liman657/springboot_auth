@@ -16,7 +16,6 @@ public class Constant {
 	public static final String JWT_SECRET = "8677df7fc3a34e26a61c034d5ec8245d";
 	//token有效时间
 	public static final long JWT_TTL = 3600 * 1000;
-
 	public static final String TOKEN_ISSUER="code for fangfang";
 
 	//token失效的时间：ms为单位
