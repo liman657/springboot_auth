@@ -2,6 +2,7 @@ package com.learn.springauthserver.config;
 
 import com.learn.springauthserver.interceptor.DBAuthInterceptor;
 import com.learn.springauthserver.interceptor.JWTInterceptor;
+import com.learn.springauthserver.interceptor.JWTRedisInterceptor;
 import com.learn.springauthserver.interceptor.RedisAuthInterceptor;
 import com.learn.springauthserver.service.DBAuthService;
 import org.springframework.context.annotation.Bean;
@@ -63,6 +64,11 @@ public class CustomerWebConfig implements WebMvcConfigurer {
     @Bean
     public JWTInterceptor jwtInterceptor() {
         return new JWTInterceptor();
+    }
+
+    @Bean
+    public JWTRedisInterceptor jwtRedisInterceptor(){
+        return new JWTRedisInterceptor();
     }
 
     //访问静态资源
