@@ -1,9 +1,6 @@
 package com.learn.springauthserver.config;
 
-import com.learn.springauthserver.interceptor.DBAuthInterceptor;
-import com.learn.springauthserver.interceptor.JWTInterceptor;
-import com.learn.springauthserver.interceptor.JWTRedisInterceptor;
-import com.learn.springauthserver.interceptor.RedisAuthInterceptor;
+import com.learn.springauthserver.interceptor.*;
 import com.learn.springauthserver.service.DBAuthService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,17 +35,22 @@ public class CustomerWebConfig implements WebMvcConfigurer {
         final String[] jwtInterceptorPath = new String[]{"/JWTAuth/token/auth"
                 , "/JWTAuth/token/password/update", "/JWTAuth/token/logout"};
 
-        registry.addInterceptor(dbAuthInterceptor())
-                .addPathPatterns(interceptorPaths)
-                .excludePathPatterns(redisInterceptorPath);
+        final String[] sessionInterceptor = new String[]{"/session/auth"
+                , "/session/password/update", "/session/logout"};
 
-        registry.addInterceptor(redisAuthInterceptor())
-                .addPathPatterns(redisInterceptorPath).excludePathPatterns(interceptorPaths);
+//        registry.addInterceptor(dbAuthInterceptor())
+//                .addPathPatterns(interceptorPaths)
+//                .excludePathPatterns(redisInterceptorPath);
+//
+//        registry.addInterceptor(redisAuthInterceptor())
+//                .addPathPatterns(redisInterceptorPath).excludePathPatterns(interceptorPaths);
+//
+//        registry.addInterceptor(jwtInterceptor())
+//                .addPathPatterns(jwtInterceptorPath)
+//                .excludePathPatterns(redisInterceptorPath)
+//                .excludePathPatterns(interceptorPaths);
 
-        registry.addInterceptor(jwtInterceptor())
-                .addPathPatterns(jwtInterceptorPath)
-                .excludePathPatterns(redisInterceptorPath)
-                .excludePathPatterns(interceptorPaths);
+        registry.addInterceptor(sessionInterceptor()).addPathPatterns(sessionInterceptor);
     }
 
     @Bean
@@ -69,6 +71,11 @@ public class CustomerWebConfig implements WebMvcConfigurer {
     @Bean
     public JWTRedisInterceptor jwtRedisInterceptor(){
         return new JWTRedisInterceptor();
+    }
+
+    @Bean
+    public SessionInterceptor sessionInterceptor(){
+        return new SessionInterceptor();
     }
 
     //访问静态资源
