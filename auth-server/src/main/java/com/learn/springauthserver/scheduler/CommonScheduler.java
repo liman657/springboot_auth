@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * comment: 通用的定时任务
  */
 @Component
-@EnableAsync
+//@EnableAsync
 @Slf4j
 public class CommonScheduler {
 

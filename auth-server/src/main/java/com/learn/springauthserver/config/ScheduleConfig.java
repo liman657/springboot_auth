@@ -25,5 +25,4 @@ public class ScheduleConfig {
         executor.setQueueCapacity(8);
         return executor;
     }
-
 }
